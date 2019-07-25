@@ -1,0 +1,21 @@
+<div *ngIf="hero">
+
+  <h2>{{hero.title | uppercase}} Details</h2>
+  <div>
+    <ul>
+      <li>
+        <label>Title:
+          <input [(ngModel)]="hero.title" placeholder="title" />
+        </label>
+      </li>
+      <li>
+        Author: {{hero.author}}
+      </li>
+      <li>
+        Content: {{hero.content}}
+      </li>
+    </ul>
+
+  </div>
+
+</div>
